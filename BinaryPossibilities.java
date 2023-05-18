@@ -20,9 +20,6 @@ class BinaryPossibilities {
         Set<String> binariesArray = new HashSet<String>();
         int arrayLength = (int) Math.pow(2, nLength);
         
-        if (nLength == 3) {
-            arrayLength--;
-        }
         int loops = 0;
 
         while (binariesArray.size() != arrayLength) {
@@ -47,6 +44,5 @@ class BinaryPossibilities {
         System.out.println("LENGTH DA ARRAY: " + binariesArray.size());
         System.out.println("NUMERO TOTAL DE LOOPS: " + loops);
         System.out.println();
-        // System.out.println(binariesArray);
     }
 }
